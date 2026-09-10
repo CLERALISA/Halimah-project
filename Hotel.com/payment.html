@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <div class="payment-container">
+
+        <section class="payment-header">
+
+            <div class="payment-header-content">
+
+                <p class="payment-small">HOTEL PAYMENTS</p>
+
+                <h1>Payment Center</h1>
+
+                <p class="payment-text">
+                    Manage your hotel payments, view payment history and keep track of your accommodation fees.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="payment-content">
+
+            <div class="payment-left-content">
+
+                <div class="payment-form-card">
+
+                    <div class="payment-section-header">
+
+                        <div>
+
+                            <p class="payment-section-label">MAKE PAYMENT</p>
+
+                            <h2>Hotel Payment</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="payment-form">
+
+                        <div class="payment-field">
+
+                            <label for="room-number">Room Number</label>
+
+                            <input
+                                type="text"
+                                id="room-number"
+                                placeholder="Enter room number">
+
+                        </div>
+
+
+                        <div class="payment-field">
+
+                            <label for="payment-type">Payment Type</label>
+
+                            <select id="payment-type">
+
+                                <option value="">Select payment type</option>
+
+                                <option value="accommodation">
+                                    Accommodation Fee
+                                </option>
+
+                                <option value="room-service">
+                                    Room Service
+                                </option>
+
+                                <option value="cleaning">
+                                    Cleaning Service
+                                </option>
+
+                                <option value="maintenance">
+                                    Maintenance Service
+                                </option>
+
+                                <option value="other">
+                                    Other Charges
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="payment-field">
+
+                            <label for="amount">Amount</label>
+
+                            <input
+                                type="number"
+                                id="amount"
+                                placeholder="Enter amount">
+
+                        </div>
+
+
+                        <div class="payment-field">
+
+                            <label for="payment-method">Payment Method</label>
+
+                            <select id="payment-method">
+
+                                <option value="">
+                                    Select payment method
+                                </option>
+
+                                <option value="card">
+                                    Debit / Credit Card
+                                </option>
+
+                                <option value="transfer">
+                                    Bank Transfer
+                                </option>
+
+                                <option value="wallet">
+                                    Hotel Wallet
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="payment-field">
+
+                            <label for="payment-note">Payment Note</label>
+
+                            <textarea
+                                id="payment-note"
+                                placeholder="Add a note about this payment..."></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="payment-primary-button">
+
+                            PROCEED TO PAYMENT
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="payment-section-header payment-recent-header">
+
+                    <div>
+
+                        <p class="payment-section-label">
+                            TRANSACTION HISTORY
+                        </p>
+
+                        <h2>Recent Payments</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="payment-request-list">
+
+
+                    <div class="payment-request-item">
+
+                        <div class="payment-request-icon">
+                            💳
+                        </div>
+
+                        <div class="payment-request-details">
+
+                            <h3>Accommodation Fee</h3>
+
+                            <p>
+                                Room 204 · September 2026
+                            </p>
+
+                        </div>
+
+                        <span class="payment-request-amount">
+                            ₦250,000
+                        </span>
+
+                        <span class="payment-request-status payment-completed">
+                            Paid
+                        </span>
+
+                    </div>
+
+
+                    <div class="payment-request-item">
+
+                        <div class="payment-request-icon">
+                            🧹
+                        </div>
+
+                        <div class="payment-request-details">
+
+                            <h3>Cleaning Service</h3>
+
+                            <p>
+                                Room 204 · Room cleaning
+                            </p>
+
+                        </div>
+
+                        <span class="payment-request-amount">
+                            ₦10,000
+                        </span>
+
+                        <span class="payment-request-status payment-pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="payment-request-item">
+
+                        <div class="payment-request-icon">
+                            🔧
+                        </div>
+
+                        <div class="payment-request-details">
+
+                            <h3>Maintenance Service</h3>
+
+                            <p>
+                                Room 204 · Repair service
+                            </p>
+
+                        </div>
+
+                        <span class="payment-request-amount">
+                            ₦5,000
+                        </span>
+
+                        <span class="payment-request-status payment-approved">
+                            Confirmed
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <aside class="payment-right-content">
+
+
+                <div class="payment-quick-card">
+
+                    <div class="payment-section-header">
+
+                        <div>
+
+                            <p class="payment-section-label">
+                                QUICK ACCESS
+                            </p>
+
+                            <h2>Payment Services</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="payment-service-item">
+
+                        <div class="payment-service-icon">
+                            💳
+                        </div>
+
+                        <div>
+
+                            <h3>Make Payment</h3>
+
+                            <p>Pay your hotel fees</p>
+
+                        </div>
+
+                        <span>›</span>
+
+                    </a>
+
+
+                    <a href="#" class="payment-service-item">
+
+                        <div class="payment-service-icon">
+                            📄
+                        </div>
+
+                        <div>
+
+                            <h3>Payment History</h3>
+
+                            <p>View past transactions</p>
+
+                        </div>
+
+                        <span>›</span>
+
+                    </a>
+
+
+                    <a href="#" class="payment-service-item">
+
+                        <div class="payment-service-icon">
+                            🧾
+                        </div>
+
+                        <div>
+
+                            <h3>Receipts</h3>
+
+                            <p>View your payment receipts</p>
+
+                        </div>
+
+                        <span>›</span>
+
+                    </a>
+
+
+                    <a href="#" class="payment-service-item">
+
+                        <div class="payment-service-icon">
+                            📞
+                        </div>
+
+                        <div>
+
+                            <h3>Payment Support</h3>
+
+                            <p>Contact the hotel</p>
+
+                        </div>
+
+                        <span>›</span>
+
+                    </a>
+
+
+                </div>
+
+
+                <div class="payment-notice-card">
+
+                    <div class="payment-notice-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <h3>Payment Notice</h3>
+
+                        <p>
+                            Please make sure your payment details are correct
+                            before completing a transaction.
+                        </p>
+
+                        <a href="#">
+                            Contact Payment Support
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

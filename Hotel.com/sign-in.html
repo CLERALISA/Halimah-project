@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+     <script src="JS/api.js"></script>
+  <script src="JS/auth.js"></script>
+</head>
+<body>
+    <div class="signin-page">
+        <div class="signin-bg">
+            <div class="signin-card">
+
+                <h1 class="signin-title">Sign In</h1>
+
+                <div class="signin-form">
+
+                    <div class="signin-fieldrow">
+                        <span class="signin-lefticon">✉</span>
+                        <input type="email" class="signin-field" placeholder="E-mail">
+                    </div>
+
+                    <div class="signin-fieldrow">
+                        <span class="signin-lefticon">🔒</span>
+                        <input type="password" class="signin-field signin-passfield" placeholder="Password">
+                        <span class="signin-eyeicon">👁</span>
+                    </div>
+
+                    <div class="signin-rememberrow">
+                        <div class="signin-rememberleft">
+                            <input type="checkbox" class="signin-checkbox" id="signin-remember">
+                            <label class="signin-rememberlabel" for="signin-remember">Remember</label>
+                        </div>
+                        <a href="forgot-password.html" class="signin-forgotlink">Forgot your password?</a>
+                    </div>
+
+                    <a href="welcome-page.html" class="signin-btnprimary">Sign In</a>
+
+                </div>
+
+                <div class="signin-bottomtext">
+                    New member?
+                    <a href="sign-up.html" class="signin-createlink">Create account</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../all-images/body-images/web-picture.jpeg") no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    align-items: center;
+}
+
+.background-img .form-container {
+    position: relative;
+    min-height: 400px;
+    width: 500px;
+    background-color: var(--input-bg-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.95;
+}
+
+.background-img .form-container .form-wrapper {
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.background-img .form-container .form-wrapper h1 {
+    font-family: title-font;
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.background-img .form-container .form-wrapper .top-btn-wrapper {
+    display: flex;
+    gap: 2px;
+}
+
+.background-img .form-container .form-wrapper .top-btn-wrapper .btn {
+    height: 35px;
+    padding: 0px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    font-size: 12px;
+    font-family: body-font;
+}
+
+.background-img .form-container .form-wrapper .top-btn-wrapper .btn.login-btn {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.background-img .form-container .form-wrapper .top-btn-wrapper .btn.register-btn {
+    border-radius: 0px 20px 20px 0px;  
+}
+
+.background-img .form-container .form-wrapper .top-btn-wrapper .btn.forgot-password-btn {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.background-img .form-container .form-wrapper .form-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.background-img .form-container .form-wrapper .form-content p {
+    font-family: body-font;
+    font-size: 12px;
+}
+
+.background-img .form-container .form-wrapper .form-content .text-field {
+    font-family: body-font;
+    font-size: 12px;
+    height: 30px;
+    padding: 10px;
+    background-color: var(--white-color);
+    border: none;
+    outline: none;
+}
+
+.background-img .form-container .form-wrapper .form-content .bottom-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background-img .form-container .form-wrapper .form-content .bottom-btn-wrapper label span {
+    font-family: body-font;
+    font-size: 11px;
+    color: var(--semiblack-color);
+    letter-spacing: 1px;
+}
+
+.background-img .form-container .form-wrapper .form-content .bottom-btn-wrapper .login-btn {
+    height: 50px;
+    padding: 0px 40px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: sub-title-font;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container p {
+    font-family: body-font;
+    font-size: 15px;
+    color: var(--light-black-color);
+    letter-spacing: 1px;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon {
+    height: 40px;
+    width: 40px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   cursor: pointer;
+    transition: all ease 0.4s;
+    border: 1px solid var(--white-color);
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon i {
+    color: var(--white-color);
+    border: none;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.facebook {
+    background-color: #1877F2;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.twitter {
+    background-color: #21BCFF;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.google {
+    background-color: #E7180B;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.linkedin {
+    background-color: #0A66C2;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.pinterest {
+    background-color: #C11007;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.facebook:hover {
+    background-color: var(--white-color);
+    border: 1px solid #1877F2;
+
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.facebook:hover i {
+    color: #1877F2;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.twitter:hover {
+    border: 1px solid #21BCFF;
+    background-color: var(--white-color);
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.twitter:hover i {
+    color: #21BCFF;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.google:hover {
+    border: 1px solid #E7180B;
+    background-color: var(--white-color);
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.google:hover i {
+    color: #E7180B;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.linkedin:hover {
+    border: 1px solid #0A66C2;
+    background-color: var(--white-color);
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.linkedin:hover i {
+    color: #0A66C2;
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.pinterest:hover {
+    border: 1px solid #C11007;
+    background-color: var(--white-color);
+}
+
+.background-img .form-container .form-wrapper .form-content .social-container .social-icon-wrapper .social-icon.pinterest:hover i {
+    color: #C11007;
+}

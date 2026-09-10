@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <div class="maintenance-container">
+
+        <section class="maintenance-header">
+            <div class="maintenance-header-content">
+                <p class="maintenance-small">HOTEL SERVICES</p>
+                <h1>Maintenance Request</h1>
+                <p class="maintenance-text">
+                    Report a problem in your room and our maintenance team will assist you.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="maintenance-content">
+
+            <div class="maintenance-left-content">
+
+                <div class="maintenance-form-card">
+
+                    <div class="maintenance-section-header">
+                        <div>
+                            <p class="maintenance-section-label">REPORT AN ISSUE</p>
+                            <h2>Maintenance Request</h2>
+                        </div>
+                    </div>
+
+                    <form class="maintenance-form">
+
+                        <div class="maintenance-field">
+                            <label for="room-number">Room Number</label>
+                            <input type="text" id="room-number"
+                                placeholder="Enter your room number">
+                        </div>
+
+                        <div class="maintenance-field">
+                            <label for="issue-type">Issue Type</label>
+                            <select id="issue-type">
+                                <option value="">Select an issue</option>
+                                <option value="electrical">Electrical</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="air-conditioning">Air Conditioning</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="maintenance-field">
+                            <label for="issue-title">Issue Title</label>
+                            <input type="text" id="issue-title"
+                                placeholder="e.g. Air conditioner not working">
+                        </div>
+
+                        <div class="maintenance-field">
+                            <label for="issue-description">Description</label>
+                            <textarea id="issue-description"
+                                placeholder="Describe the problem..."></textarea>
+                        </div>
+
+                        <div class="maintenance-field">
+                            <label for="priority">Priority</label>
+                            <select id="priority">
+                                <option value="">Select priority</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="maintenance-primary-button">
+                            SUBMIT REQUEST
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="maintenance-section-header maintenance-recent-header">
+                    <div>
+                        <p class="maintenance-section-label">ACTIVITY</p>
+                        <h2>Recent Maintenance Requests</h2>
+                    </div>
+                </div>
+
+
+                <div class="maintenance-request-list">
+
+                    <div class="maintenance-request-item">
+                        <div class="maintenance-request-icon">🔧</div>
+
+                        <div class="maintenance-request-details">
+                            <h3>Air Conditioner</h3>
+                            <p>Room 204 · Air conditioner not cooling</p>
+                        </div>
+
+                        <span class="maintenance-request-status maintenance-pending">
+                            Pending
+                        </span>
+                    </div>
+
+
+                    <div class="maintenance-request-item">
+                        <div class="maintenance-request-icon">💡</div>
+
+                        <div class="maintenance-request-details">
+                            <h3>Room Light</h3>
+                            <p>Room 204 · Ceiling light replacement</p>
+                        </div>
+
+                        <span class="maintenance-request-status maintenance-completed">
+                            Completed
+                        </span>
+                    </div>
+
+
+                    <div class="maintenance-request-item">
+                        <div class="maintenance-request-icon">🚿</div>
+
+                        <div class="maintenance-request-details">
+                            <h3>Bathroom</h3>
+                            <p>Room 204 · Shower tap repair</p>
+                        </div>
+
+                        <span class="maintenance-request-status maintenance-approved">
+                            Approved
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <aside class="maintenance-right-content">
+
+                <div class="maintenance-quick-card">
+
+                    <div class="maintenance-section-header">
+                        <div>
+                            <p class="maintenance-section-label">QUICK ACCESS</p>
+                            <h2>Hotel Services</h2>
+                        </div>
+                    </div>
+
+
+                    <a href="#" class="maintenance-service-item">
+                        <div class="maintenance-service-icon">🔧</div>
+
+                        <div>
+                            <h3>Maintenance</h3>
+                            <p>Report an issue</p>
+                        </div>
+
+                        <span>›</span>
+                    </a>
+
+
+                    <a href="#" class="maintenance-service-item">
+                        <div class="maintenance-service-icon">🧹</div>
+
+                        <div>
+                            <h3>Housekeeping</h3>
+                            <p>Request room cleaning</p>
+                        </div>
+
+                        <span>›</span>
+                    </a>
+
+
+                    <a href="#" class="maintenance-service-item">
+                        <div class="maintenance-service-icon">🍽️</div>
+
+                        <div>
+                            <h3>Room Service</h3>
+                            <p>Order to your room</p>
+                        </div>
+
+                        <span>›</span>
+                    </a>
+
+
+                    <a href="#" class="maintenance-service-item">
+                        <div class="maintenance-service-icon">📞</div>
+
+                        <div>
+                            <h3>Hotel Support</h3>
+                            <p>Contact reception</p>
+                        </div>
+
+                        <span>›</span>
+                    </a>
+
+                </div>
+
+
+                <div class="maintenance-notice-card">
+
+                    <div class="maintenance-notice-icon">!</div>
+
+                    <div>
+                        <h3>Hotel Notice</h3>
+
+                        <p>
+                            For urgent maintenance issues, please contact the
+                            hotel reception immediately.
+                        </p>
+
+                        <a href="#">Contact Reception</a>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
