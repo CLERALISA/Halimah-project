@@ -6,197 +6,581 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayHub</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
+<body class="homepage-page">
 
-    <div class="dashboard-container">
+    <div class="homepage-container">
 
-        <section class="welcome-section">
-            <div class="welcome-content">
-                <p class="welcome-small">Welcome back</p>
-                <h1>Welcome, CleraLisa 👋</h1>
-                <p class="welcome-text">Manage your hostel stay, room details and requests from here.</p>
+        <aside class="homepage-sidebar">
+
+            <div class="homepage-logo">
+                <div class="homepage-logo-icon">🏠</div>
+                <span>HostelHub</span>
             </div>
-            <div class="welcome-image">
-                
-            </div>
-        </section>
 
-        <section class="stats-section">
-            <div class="stat-card">
-                <div class="stat-icon">🏠</div>
-                <div>
-                    <p>Room Number</p>
-                    <h2>204</h2>
+            <div class="homepage-sidebar-section">
+
+                <div class="homepage-sidebar-title">
+                    Overview
                 </div>
+
+                <nav class="homepage-navigation">
+
+                    <a href="homepage.html" class="homepage-nav-item homepage-nav-active">
+                        <span class="homepage-nav-icon">▦</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="students.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">♙</span>
+                        <span>Students</span>
+                    </a>
+
+                    <a href="hostels.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▥</span>
+                        <span>Hostels</span>
+                    </a>
+
+                    <a href="room.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▦</span>
+                        <span>Rooms</span>
+                    </a>
+
+                    <a href="allocation.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">♧</span>
+                        <span>Allocation</span>
+                    </a>
+
+                    <a href="room-transfer.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">⇄</span>
+                        <span>Room Transfer</span>
+                    </a>
+
+                    <a href="checkout.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">⇥</span>
+                        <span>Checkout</span>
+                    </a>
+
+                </nav>
+
             </div>
 
-            <div class="stat-card">
-                <div class="stat-icon">🛏</div>
-                <div>
-                    <p>Bed Space</p>
-                    <h2>B-12</h2>
+            <div class="homepage-sidebar-section">
+
+                <div class="homepage-sidebar-title">
+                    Finance
                 </div>
+
+                <nav class="homepage-navigation">
+
+                    <a href="hostel-fees.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▤</span>
+                        <span>Hostel Fees</span>
+                    </a>
+
+                    <a href="payment.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▣</span>
+                        <span>Payments</span>
+                    </a>
+
+                </nav>
+
             </div>
 
-            <div class="stat-card">
-                <div class="stat-icon">📅</div>
-                <div>
-                    <p>Stay Status</p>
-                    <h2>Active</h2>
+            <div class="homepage-sidebar-section">
+
+                <div class="homepage-sidebar-title">
+                    Operations
                 </div>
+
+                <nav class="homepage-navigation">
+
+                    <a href="maintenance.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">✂</span>
+                        <span>Maintenance</span>
+                    </a>
+
+                    <a href="complaints.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▤</span>
+                        <span>Complaints</span>
+                    </a>
+
+                    <a href="visitors.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▣</span>
+                        <span>Visitors</span>
+                    </a>
+
+                </nav>
+
             </div>
 
-            <div class="stat-card">
-                <div class="stat-icon">💳</div>
-                <div>
-                    <p>Payment</p>
-                    <h2>Paid</h2>
+            <div class="homepage-sidebar-section">
+
+                <div class="homepage-sidebar-title">
+                    System
                 </div>
+
+                <nav class="homepage-navigation">
+
+                    <a href="reports.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">▥</span>
+                        <span>Reports</span>
+                    </a>
+
+                    <a href="users.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">♙</span>
+                        <span>Users</span>
+                    </a>
+
+                    <a href="settings.html" class="homepage-nav-item">
+                        <span class="homepage-nav-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                </nav>
+
             </div>
-        </section>
 
-        <section class="main-content">
+        </aside>
 
-            <div class="left-content">
+        <main class="homepage-main">
 
-                <div class="section-header">
-                    <div>
-                        <p class="section-label">HOSTEL</p>
-                        <h2>Your Accommodation</h2>
+            <header class="homepage-header">
+
+                <div class="homepage-header-title">
+                    Dashboard
+                </div>
+
+                <div class="homepage-header-right">
+
+                    <div class="homepage-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search anything...">
                     </div>
-                    <a href="#" class="view-link">View details</a>
-                </div>
 
-                <div class="room-card">
-                    <div class="room-image">
-                       
+                    <button class="homepage-notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span></span>
+                    </button>
+
+                    <div class="homepage-admin">
+
+                        <div class="homepage-admin-avatar">
+                            AD
+                        </div>
+
+                        <div class="homepage-admin-info">
+                            <strong>Admin</strong>
+                            <small>Super</small>
+                            <small>Admin</small>
+                        </div>
+
                     </div>
 
-                    <div class="room-details">
-                        <span class="status">ACTIVE</span>
-                        <h3>Student Hostel</h3>
-                        <p>Block A · Room 204 · Bed B-12</p>
+                </div>
 
-                        <div class="room-info">
-                            <div>
-                                <span>Room Type</span>
-                                <strong>4 Bed Room</strong>
+            </header>
+
+
+            <section class="homepage-content">
+
+                <div class="homepage-page-heading">
+
+                    <div class="homepage-heading-text">
+                        <h1>Dashboard</h1>
+                        <p>Welcome back. Here's your hostel overview.</p>
+                    </div>
+
+                    <button class="homepage-allocation-button">
+                        <i class="fa-solid fa-plus"></i>
+                        New Allocation
+                    </button>
+
+                </div>
+
+
+                <section class="homepage-statistics">
+
+                    <div class="homepage-stat-card">
+
+                        <div class="homepage-stat-icon homepage-student-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div class="homepage-stat-details">
+                            <h2>2,450</h2>
+                            <p>Total Students</p>
+                        </div>
+
+                        <span class="homepage-stat-change">+12.5%</span>
+
+                    </div>
+
+
+                    <div class="homepage-stat-card">
+
+                        <div class="homepage-stat-icon homepage-room-icon">
+                            <i class="fa-solid fa-door-open"></i>
+                        </div>
+
+                        <div class="homepage-stat-details">
+                            <h2>620</h2>
+                            <p>Total Rooms</p>
+                        </div>
+
+                        <span class="homepage-stat-change">+4.2%</span>
+
+                    </div>
+
+
+                    <div class="homepage-stat-card">
+
+                        <div class="homepage-stat-icon homepage-occupancy-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <div class="homepage-stat-details">
+                            <h2>82.4%</h2>
+                            <p>Occupancy Rate</p>
+                        </div>
+
+                        <span class="homepage-stat-change">+3.1%</span>
+
+                    </div>
+
+
+                    <div class="homepage-stat-card">
+
+                        <div class="homepage-stat-icon homepage-payment-icon">
+                            <i class="fa-solid fa-money-bill"></i>
+                        </div>
+
+                        <div class="homepage-stat-details">
+                            <h2>₦18.5M</h2>
+                            <p>Collected This Session</p>
+                        </div>
+
+                        <span class="homepage-stat-change">+15.2%</span>
+
+                    </div>
+
+                </section>
+
+
+                <section class="homepage-dashboard-grid">
+
+                    <div class="homepage-occupancy-card">
+
+                        <div class="homepage-card-heading">
+
+                            <div class="homepage-card-title">
+                                <h2>Occupancy Overview</h2>
+                                <p>Last 7 days</p>
                             </div>
-                            <div>
-                                <span>Floor</span>
-                                <strong>2nd Floor</strong>
+
+                            <select>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="homepage-chart">
+
+                            <div class="homepage-chart-labels">
+                                <span>2,560</span>
+                                <span>2,540</span>
+                                <span>2,520</span>
+                                <span>2,500</span>
+                                <span>2,480</span>
+                                <span>2,460</span>
+                                <span>2,440</span>
+                            </div>
+
+                            <div class="homepage-line-chart">
+
+                                <svg viewBox="0 0 700 300" preserveAspectRatio="none">
+
+                                    <line x1="0" y1="25" x2="700" y2="25"></line>
+                                    <line x1="0" y1="70" x2="700" y2="70"></line>
+                                    <line x1="0" y1="115" x2="700" y2="115"></line>
+                                    <line x1="0" y1="160" x2="700" y2="160"></line>
+                                    <line x1="0" y1="205" x2="700" y2="205"></line>
+                                    <line x1="0" y1="250" x2="700" y2="250"></line>
+
+                                    <polyline points="0,235 115,205 230,165 345,140 460,105 575,70 700,25"></polyline>
+
+                                    <circle cx="0" cy="235" r="5"></circle>
+                                    <circle cx="115" cy="205" r="5"></circle>
+                                    <circle cx="230" cy="165" r="5"></circle>
+                                    <circle cx="345" cy="140" r="5"></circle>
+                                    <circle cx="460" cy="105" r="5"></circle>
+                                    <circle cx="575" cy="70" r="5"></circle>
+                                    <circle cx="700" cy="25" r="5"></circle>
+
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="homepage-chart-days">
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                            <span>Sun</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="homepage-capacity-card">
+
+                        <div class="homepage-card-heading">
+                            <div class="homepage-card-title">
+                                <h2>Capacity Status</h2>
                             </div>
                         </div>
 
-                        <a href="room.html" class="primary-button">VIEW ROOM</a>
-                    </div>
-                </div>
 
-                <div class="section-header recent-header">
-                    <div>
-                        <p class="section-label">ACTIVITY</p>
-                        <h2>Recent Requests</h2>
-                    </div>
-                    <a href="leave-request.html" class="view-link">View all</a>
-                </div>
+                        <div class="homepage-donut-area">
 
-                <div class="request-list">
+                            <div class="homepage-donut">
 
-                    <div class="request-item">
-                        <div class="request-icon">🔧</div>
-                        <div class="request-details">
-                            <h3>Maintenance Request</h3>
-                            <p>Room light replacement</p>
+                                <div class="homepage-donut-inner">
+                                    <strong>2,910</strong>
+                                    <span>Total Beds</span>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <span class="request-status pending">Pending</span>
-                    </div>
 
-                    <div class="request-item">
-                        <div class="request-icon">🧹</div>
-                        <div class="request-details">
-                            <h3>Cleaning Request</h3>
-                            <p>Room cleaning service</p>
-                        </div>
-                        <span class="request-status completed">Completed</span>
-                    </div>
 
-                    <div class="request-item">
-                        <div class="request-icon">📋</div>
-                        <div class="request-details">
-                            <h3>Hostel Application</h3>
-                            <p>Accommodation application</p>
+                        <div class="homepage-capacity-legend">
+
+                            <div class="homepage-capacity-item">
+                                <span class="homepage-legend-blue"></span>
+
+                                <div>
+                                    <p>Occupied</p>
+                                    <strong>2,554</strong>
+                                </div>
+                            </div>
+
+                            <div class="homepage-capacity-item">
+                                <span class="homepage-legend-green"></span>
+
+                                <div>
+                                    <p>Available</p>
+                                    <strong>356</strong>
+                                </div>
+                            </div>
+
                         </div>
-                        <span class="request-status completed">Approved</span>
+
                     </div>
 
-                </div>
+                </section>
 
-            </div>
 
-            <aside class="right-content">
+                <section class="homepage-bottom-grid">
 
-                <div class="quick-card">
-                    <div class="section-header">
-                        <div>
-                            <p class="section-label">QUICK ACCESS</p>
-                            <h2>Services</h2>
+                    <div class="homepage-recent-card">
+
+                        <div class="homepage-card-heading">
+
+                            <div class="homepage-card-title">
+                                <h2>Recent Allocations</h2>
+                                <p>Latest student room allocations</p>
+                            </div>
+
+                            <a href="allocation.html">View all</a>
+
                         </div>
+
+
+                        <div class="homepage-table-wrapper">
+
+                            <table>
+
+                                <thead>
+                                    <tr>
+                                        <th>Student</th>
+                                        <th>Hostel</th>
+                                        <th>Room</th>
+                                        <th>Bed</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <strong>John Doe</strong>
+                                            <small>STU/2026/0001</small>
+                                        </td>
+                                        <td>King's Hall</td>
+                                        <td>A204</td>
+                                        <td>A204-01</td>
+                                        <td>15 Sep 2026</td>
+                                        <td><span class="homepage-status">Allocated</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <strong>Jane Smith</strong>
+                                            <small>STU/2026/0002</small>
+                                        </td>
+                                        <td>Queen's Hall</td>
+                                        <td>B204</td>
+                                        <td>B204-01</td>
+                                        <td>15 Sep 2026</td>
+                                        <td><span class="homepage-status">Allocated</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <strong>Sarah James</strong>
+                                            <small>STU/2026/0004</small>
+                                        </td>
+                                        <td>King's Hall</td>
+                                        <td>A205</td>
+                                        <td>A205-02</td>
+                                        <td>14 Sep 2026</td>
+                                        <td><span class="homepage-status">Allocated</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <strong>David Okafor</strong>
+                                            <small>STU/2026/0005</small>
+                                        </td>
+                                        <td>Queen's Hall</td>
+                                        <td>B205</td>
+                                        <td>B205-01</td>
+                                        <td>14 Sep 2026</td>
+                                        <td><span class="homepage-status">Allocated</span></td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
                     </div>
 
-                    <a href="maintanance.html" class="service-item">
-                        <div class="service-icon">🔧</div>
-                        <div>
-                            <h3>Maintenance</h3>
-                            <p>Report an issue</p>
+
+                    <div class="homepage-quick-actions-card">
+
+                        <div class="homepage-card-heading">
+                            <div class="homepage-card-title">
+                                <h2>Quick Actions</h2>
+                            </div>
                         </div>
-                        <span>›</span>
-                    </a>
 
-                    <a href="cleaning.html" class="service-item">
-                        <div class="service-icon">🧹</div>
-                        <div>
-                            <h3>Cleaning</h3>
-                            <p>Request cleaning</p>
+
+                        <div class="homepage-quick-actions">
+
+                            <button class="homepage-quick-action" onclick="openHomepageModal('studentModal')">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>Add Student</span>
+                            </button>
+
+                            <button class="homepage-quick-action" onclick="openHomepageModal('hostelModal')">
+                                <i class="fa-solid fa-building-circle-plus"></i>
+                                <span>Add Hostel</span>
+                            </button>
+
+                            <button class="homepage-quick-action" onclick="openHomepageModal('paymentModal')">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <span>Record Payment</span>
+                            </button>
+
+                            <button class="homepage-quick-action" onclick="openHomepageModal('maintenanceModal')">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span>Maintenance</span>
+                            </button>
+
                         </div>
-                        <span>›</span>
-                    </a>
 
-                    <a href="payment.html" class="service-item">
-                        <div class="service-icon">💳</div>
-                        <div>
-                            <h3>Payments</h3>
-                            <p>View payment history</p>
-                        </div>
-                        <span>›</span>
-                    </a>
-
-                    <a href="support.html" class="service-item">
-                        <div class="service-icon">📞</div>
-                        <div>
-                            <h3>Support</h3>
-                            <p>Contact hostel support</p>
-                        </div>
-                        <span>›</span>
-                    </a>
-
-                </div>
-
-                <div class="notice-card">
-                    <div class="notice-icon">!</div>
-                    <div>
-                        <h3>Hostel Notice</h3>
-                        <p>Remember to keep your room clean and follow hostel guidelines.</p>
-                        <a href="#">Read notice</a>
                     </div>
-                </div>
 
-            </aside>
+                </section>
 
-        </section>
+            </section>
+
+        </main>
 
     </div>
-</body>
 
-</html>
+
+    <div class="homepage-modal" id="studentModal">
+
+        <div class="homepage-modal-box">
+
+            <div class="homepage-modal-header">
+                <h2>Add Student</h2>
+
+                <button onclick="closeHomepageModal('studentModal')">
+                    &times;
+                </button>
+            </div>
+
+            <form>
+
+                <div class="homepage-modal-form-grid">
+
+                    <div class="homepage-form-group">
+                        <label>First Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="homepage-form-group">
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="homepage-form-group">
+                        <label>Student ID</label>
+                        <input type="text" placeholder="STU/2026/0004">
+                    </div>
+
+                    <div class="homepage-form-group">
+                        <label>Gender</label>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+
+                    <div class="homepage-form-group">
+                        <label>Department</label>
+                        <select>
+                            <option>Computer Science</option>
+                            <option>Accounting</option>
+                            <option>Business Administration</option>
+                            <option>Mass Communication</option>
+                        </select>
+                    </div>
+
+                    <div class="homepage-form-group">
+                        <label>Level</label>
+                        <select>
+                            <option>ND I</option>
+                            <option>ND II</option>
+                            <option>HND I</option>
+                            <option>HND II</option>
+                        </select>
+                    </div>

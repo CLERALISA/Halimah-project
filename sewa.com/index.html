@@ -1,45 +1,83 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http: //www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="ROBOTS" content="ALL" />
-    <meta name="Engine" content="all" />
-    <meta name="distribution" content="global" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:type" content="Website" />
-
-    <link href="all-images/icon-images/icon.png" rel="shortcut icon" type="image-png" />
-    <link href="styles/icons-1.11.3/font/bootstrap-icons.css" type="text/css" rel="stylesheet" />
-
-    <link href="styles/contants.css" type="text/css" rel="stylesheet" />
-    <link href="styles/main.css" type="text/css" rel="stylesheet" />
-    <title>My First Web Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | PetroCore Energy</title>
+    <link rel="stylesheet" href="/styles/contants.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
 
-    <div class="landing-page-bg">
-        <div class="overlay-bg">
-            <header>
-                <div class="header-wrapper">
-                    
-                </div>
+    <div class="signin-container">
 
-            </header>
+        <div class="signin-content">
+
+            <div class="signin-brand">
+                <a href="welcome-page.html" class="signin-logo">
+                    PETRO<span>CORE</span>
+                </a>
+
+                <p>Powering today. Energizing tomorrow.</p>
+            </div>
+
+            <div class="signin-form-section">
+
+                <p class="signin-subtitle">WELCOME BACK</p>
+
+                <h1>Sign In</h1>
+
+                <p class="signin-description">
+                    Sign in to access your PetroCore Energy account.
+                </p>
+
+                <form class="signin-form">
+
+                    <div class="signin-form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="signin-form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="signin-form-options">
+
+                        <label class="signin-remember">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="forgot-password.html">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <button type="submit" class="signin-button">
+                        Sign In
+                    </button>
+
+                </form>
+
+                <p class="signin-register">
+                    Don't have an account?
+                    <a href="sign-up.html">Create Account</a>
+                </p>
+
+                <a href="homepage.html" class="signin-home-link">
+                    ← Back to Homepage
+                </a>
+
+            </div>
+
         </div>
 
     </div>
-
-
-
-
-
-
-
-
 
 </body>
 

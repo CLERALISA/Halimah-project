@@ -18,182 +18,664 @@ ul {
     list-style: none;
 }
 
-.homepage-page .homepage-bg {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.homepage-page {
+    background: #f5f7f9;
+    color: #172033;
+}
+
+.homepage-page .homepage-container {
+    display: flex;
     min-height: 100vh;
-    background: linear-gradient(160deg, #00C6FF 20%, #0072FF 50%, #0052CC 80%);
+}
+
+
+.homepage-page .homepage-container .homepage-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100vh;
+    padding: 30px 18px;
+    background: #ffffff;
+    border-right: 1px solid #e5e8ed;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.homepage-page .homepage-container .homepage-sidebar .homepage-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px 35px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #172033;
+}
+
+.homepage-page .homepage-container .homepage-sidebar .homepage-logo-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 24px;
-}
-
-.homepage-page .homepage-bg .homepage-grid {
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 50px 36px;
-    width: 100%;
-    max-width: 440px;
-    box-shadow: 0 24px 64px rgba(0, 82, 204, 0.16);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-}
-
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card {
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 38px 30px;
-    box-shadow: 0 24px 64px rgba(0, 82, 204, 0.15);
-
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-title {
-    font-size: 20px;
-    font-weight: 800;
-    color: #0052CC;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 26px;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-field {
-    width: 100%;
-    padding: 13px 16px;
-    background: #EEF4FF;
-    border: 1.5px solid transparent;
+    width: 38px;
+    height: 38px;
     border-radius: 10px;
-    font-size: 13.5px;
-    color: #334155;
-    outline: none;
-    font-family: inherit;
-    transition: border-color 0.2s, background 0.2s;
+    background: #1479e8;
+    color: #ffffff;
+    font-size: 18px;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-field::placeholder {
-    color: #94A3B8;
+.homepage-page .homepage-container .homepage-sidebar .homepage-sidebar-section {
+    margin-bottom: 25px;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-field:focus {
-    border-color: #0072FF;
-    background: #ffffff;
+.homepage-page .homepage-container .homepage-sidebar .homepage-sidebar-title {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    color: #8b96a5;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-hint {
-    font-size: 11.5px;
-    color: #94A3B8;
-    text-align: center;
-    line-height: 1.65;
-    margin: 2px 0;
+.homepage-page .homepage-container .homepage-sidebar .homepage-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-passrow {
-    position: relative;
+.homepage-page .homepage-container .homepage-sidebar .homepage-navigation .homepage-nav-item {
     display: flex;
     align-items: center;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-passrow .homepage-signup-lockicon {
-    position: absolute;
-    left: 13px;
-    color: #94A3B8;
+    gap: 13px;
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 8px;
+    color: #667281;
     font-size: 14px;
-    pointer-events: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-passrow .homepage-signup-field {
-    padding-left: 36px;
-    padding-right: 42px;
+.homepage-page .homepage-container .homepage-sidebar .homepage-navigation .homepage-nav-item:hover {
+    background: #f1f6fc;
+    color: #1479e8;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-passrow .homepage-signup-eyeicon {
-    position: absolute;
-    right: 13px;
-    color: #94A3B8;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-checkrow {
-    display: flex;
-    align-items: flex-start;
-    gap: 9px;
-    margin: 3px 0;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-checkrow .homepage-signup-checkbox {
-    width: 15px;
-    height: 15px;
-    accent-color: #0052CC;
-    cursor: pointer;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-checkrow .homepage-signup-checklabel {
-    font-size: 12.5px;
-    color: #64748B;
-    line-height: 1.55;
-}
-
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-checkrow .homepage-signup-checklabel .homepage-signup-checklink {
-    color: #0072FF;
+.homepage-page .homepage-container .homepage-sidebar .homepage-navigation .homepage-nav-item.homepage-nav-active {
+    background: #eaf4ff;
+    color: #1479e8;
     font-weight: 600;
 }
 
-.homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card .homepage-signup-form .homepage-signup-btnprimary {
-    display: block;
+.homepage-page .homepage-container .homepage-sidebar .homepage-navigation .homepage-nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    min-width: 21px;
+    color: inherit;
+    font-size: 17px;
+}
+
+.homepage-page .homepage-container .homepage-sidebar .homepage-sidebar-bottom {
+    margin-top: 10px;
+}
+
+.homepage-page .homepage-container .homepage-sidebar .homepage-sidebar-bottom .homepage-navigation {
+    gap: 3px;
+}
+
+.homepage-page .homepage-container .homepage-sidebar .homepage-sidebar-bottom .homepage-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
     width: 100%;
-    padding: 15px;
-    background: linear-gradient(to right, #0072FF, #003d99);
-    color: #ffffff;
-    border: none;
-    border-radius: 50px;
+    padding: 13px 15px;
+    border-radius: 8px;
+    color: #667281;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.homepage-page .homepage-container .homepage-sidebar .homepage-sidebar-bottom .homepage-nav-item:hover {
+    background: #f1f6fc;
+    color: #1479e8;
+}
+
+.homepage-page .homepage-container .homepage-main {
+    width: calc(100% - 270px);
+    min-height: 100vh;
+    margin-left: 270px;
+    padding: 0 38px 45px;
+}
+.homepage-page .homepage-container .homepage-main .homepage-header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-title {
+    color: #303a49;
     font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-align: center;
+    font-weight: 600;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-search {
+    width: 235px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 13px;
+    border: 1px solid #e0e5ea;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-search i {
+    color: #7c8794;
+    font-size: 13px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-notification {
+    position: relative;
+    border: none;
+    background: transparent;
+    color: #66717f;
+    font-size: 17px;
     cursor: pointer;
-    font-family: inherit;
-    margin-top: 4px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-notification span {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 6px;
+    height: 6px;
+    background: #ef4444;
+    border-radius: 50%;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-admin {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-admin .homepage-admin-avatar {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f2ff;
+    color: #1773cf;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-admin .homepage-admin-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-admin .homepage-admin-info strong {
+    font-size: 12px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-header .homepage-header-right .homepage-admin .homepage-admin-info small {
+    color: #89929e;
+    font-size: 9px;
 }
 
 
-
-
-
-@media (max-width: 768px) {
-    .homepage-page .homepage-bg {
-        padding: 36px 18px;
-    }
-
-    .homepage-page .homepage-bg .homepage-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .homepage-page .homepage-bg .homepage-grid .homepage-left .homepage-signup-card {
-        padding: 28px 22px;
-    }
-
-    .homepage-page .homepage-bg .homepage-grid .homepage-right .homepage-signin-card {
-        padding: 28px 22px;
-    }
-
-    .homepage-page .homepage-bg .homepage-grid .homepage-right .homepage-recovery-card {
-        padding: 28px 22px;
-    }
+.homepage-page .homepage-container .homepage-main .homepage-content {
+    padding: 27px 30px 40px;
 }
 
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-page-heading .homepage-heading-text h1 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-page-heading .homepage-heading-text p {
+    color: #858e99;
+    font-size: 12px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-page-heading .homepage-allocation-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #1683e8;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-page-heading .homepage-allocation-button i {
+    margin-right: 5px;
+}
+
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card {
+    position: relative;
+    min-height: 105px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 17px;
+    background: #ffffff;
+    border: 1px solid #e8ebef;
+    border-radius: 11px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-stat-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-student-icon {
+    background: #edf5ff;
+    color: #287bd0;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-room-icon {
+    background: #f3f0ff;
+    color: #7770c9;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-occupancy-icon {
+    background: #eaf9ef;
+    color: #269653;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-payment-icon {
+    background: #fff4e9;
+    color: #e58b25;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-stat-details h2 {
+    margin-bottom: 3px;
+    font-size: 19px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-stat-details p {
+    color: #7d8791;
+    font-size: 9px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-statistics .homepage-stat-card .homepage-stat-change {
+    position: absolute;
+    right: 14px;
+    bottom: 18px;
+    color: #5b8a6d;
+    font-size: 8px;
+}
+
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card,
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card {
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #e8ebef;
+    border-radius: 11px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-card-heading,
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-card-heading,
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-card-heading,
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card .homepage-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-card-heading .homepage-card-title h2 {
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-card-heading .homepage-card-title p {
+    color: #8b949f;
+    font-size: 9px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-card-heading select {
+    padding: 7px 25px 7px 9px;
+    border: 1px solid #e1e5e9;
+    border-radius: 7px;
+    background: #ffffff;
+    outline: none;
+    font-size: 10px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart {
+    height: 205px;
+    display: flex;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart .homepage-chart-labels {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0 4px;
+    color: #9099a3;
+    font-size: 8px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart .homepage-line-chart {
+    flex: 1;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart .homepage-line-chart svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart .homepage-line-chart svg line {
+    stroke: #edf0f3;
+    stroke-width: 1;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart .homepage-line-chart svg polyline {
+    fill: none;
+    stroke: #317cc7;
+    stroke-width: 3;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart .homepage-line-chart svg circle {
+    fill: #317cc7;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-occupancy-card .homepage-chart-days {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 45px;
+    color: #9099a3;
+    font-size: 8px;
+}
+
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-donut-area {
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-donut-area .homepage-donut {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: conic-gradient(#1878d1 0deg 316deg, #19a74c 316deg 360deg);
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-donut-area .homepage-donut .homepage-donut-inner {
+    width: 105px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-donut-area .homepage-donut .homepage-donut-inner strong {
+    font-size: 17px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-donut-area .homepage-donut .homepage-donut-inner span {
+    margin-top: 3px;
+    color: #89929d;
+    font-size: 8px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 13px;
+    border-top: 1px solid #edf0f3;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item .homepage-legend-blue,
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item .homepage-legend-green {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item .homepage-legend-blue {
+    background: #1878d1;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item .homepage-legend-green {
+    background: #19a74c;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item p {
+    color: #7d8791;
+    font-size: 9px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-dashboard-grid .homepage-capacity-card .homepage-capacity-legend .homepage-capacity-item strong {
+    display: block;
+    font-size: 11px;
+}
+
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 14px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card,
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card {
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #e8ebef;
+    border-radius: 11px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-card-heading a {
+    color: #147bd4;
+    font-size: 9px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper {
+    overflow-x: auto;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper table th {
+    padding: 9px 7px;
+    border-bottom: 1px solid #edf0f3;
+    color: #8a939d;
+    text-align: left;
+    font-size: 8px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper table td {
+    padding: 11px 7px;
+    border-bottom: 1px solid #f0f2f4;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper table td strong {
+    display: block;
+    font-size: 9px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper table td small {
+    display: block;
+    margin-top: 2px;
+    color: #8d96a0;
+    font-size: 7px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-recent-card .homepage-table-wrapper table td .homepage-status {
+    padding: 4px 7px;
+    border-radius: 10px;
+    background: #eaf8ef;
+    color: #24844b;
+    font-size: 7px;
+}
+
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card .homepage-quick-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card .homepage-quick-actions .homepage-quick-action {
+    min-height: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 13px;
+    padding: 16px;
+    border: 1px solid #e5e9ed;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #263142;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card .homepage-quick-actions .homepage-quick-action:hover {
+    border-color: #1683e8;
+    background: #f8fbff;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card .homepage-quick-actions .homepage-quick-action i {
+    color: #177cd2;
+    font-size: 18px;
+}
+
+.homepage-page .homepage-container .homepage-main .homepage-content .homepage-bottom-grid .homepage-quick-actions-card .homepage-quick-actions .homepage-quick-action span {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+.homepage-page .homepage-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(24, 32, 43, 0.35);
+}
+
+.homepage-page .homepage-modal.homepage-modal-active {
+    display: flex;
+}
+
+.homepage-page .homepage-modal .homepage-modal-box {
+    width: min(800px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.homepage-page .homepage-modal .homepage-modal-box.homepage-hostel-modal {
+    width: min(580px, 100%);
+}
+
+.homepage-page .homepage-modal .homepage-modal-box .homepage-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e9edf1;
+}
+
+.homepage-page .homepage-modal .homepage-modal-box .homepage-modal-header h2 {
+    font-size: 18px;
+}
+
+.homepage
 
 .signup-page .signup-bg {
     min-height: 100vh;
